@@ -27,7 +27,7 @@ body{
     radial-gradient(80% 40% at 50% 0%, rgba(224,30,30,.22), transparent 55%),
     var(--court);
   color:var(--ink); font-family:var(--body);
-  min-height:100vh; padding:18px 14px 120px; line-height:1.25; background-attachment:fixed;
+  min-height:100vh; padding:calc(env(safe-area-inset-top) + 64px) 14px 120px; line-height:1.25; background-attachment:fixed;
 }
 body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;
   background:repeating-linear-gradient(0deg, rgba(0,0,0,.16) 0 1px, transparent 1px 3px);
